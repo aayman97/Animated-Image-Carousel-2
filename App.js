@@ -45,7 +45,7 @@ export default function App() {
         horizontal
         keyExtractor={(item) => item.key}
         snapToInterval={width}
-        decelerationRate={"fast"}
+        decelerationRate={0.5}
         bounces={false}
         onScroll={Animated.event(
           [{ nativeEvent: { contentOffset: { x: scrollX } } }],
